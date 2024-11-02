@@ -68,7 +68,15 @@ button:hover{
     color: #272343;
     margin-left: 30px;
 }
-
+.submit{
+    background-color: #ffd803;
+    border: #272343;
+    border-radius: 30px;
+    padding: 10px;
+}
+.submit:hover{
+    background-color: #f7f9fd;
+}
 .head{
     background-color: #ffd803;
     background-image:url('bgtravel.jpg') ;
@@ -112,11 +120,18 @@ button:hover{
     text-align: justify; 
     margin: 20px;
 }
-hr{
+hr.destination{
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
     width:50%; 
+    background-color: #272343;
+}
+hr.profil{
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width:90%; 
     background-color: #272343;
 }
 .card-container{
@@ -188,6 +203,10 @@ footer{
     background-color: #f7f9fd;
     margin: 10px;
     border-radius: 50%;
+}
+.sosialicon a:hover{
+    background-color: #f7f9fd;
+    border-radius: 50px;
 }
 .sosialicon a i{
     font-size: 1em;
