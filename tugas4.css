@@ -18,6 +18,7 @@ li, a, button{
     font-size: 16px;
     color: #55423d;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .navbar{
     display: flex;
