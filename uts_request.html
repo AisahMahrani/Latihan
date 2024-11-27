@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Discography Music Archive</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='icon' type='image/x-icon' media='screen' href='img/discmusic.png'>
+    <link rel='stylesheet' type='text/css' media='screen' href='uts.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <!--Navigasi-->
+        <a href="#" class="logo"><i class="fa-solid fa-headphones"></i> DiscMusic</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://localhost/web_statis/uts_home.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="http://localhost/web_statis/uts_about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+                <li><a><i class="fa-solid fa-layer-group"></i> Galery<i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul>
+                    <li><a href="http://localhost/web_statis/uts_discoghraphy.html"><i class="fa-solid fa-compact-disc"></i> Discoghraphy</a></li>
+                    <li><a href="#"><i class="fa-solid fa-comment"></i> Request</a></li>
+                </ul>
+                </li>
+                <li><a href="http://localhost/web_statis/uts_registration.html"><i class="fa-regular fa-user"></i> Registration</a></li>
+                <li><a href="#Contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+            </header>
+
+<!--isi konten-->
+
+<div class="content-request">
+    <form action="https://api.web3forms.com/submit" method="POST" class="request-left">
+        <div class="request-left-tittle">
+            <h2>Drop Your Request</h2>
+            <hr>
+        </div>
+        <input type="hidden" name="access_key" value="a65da2a1-b2ab-4109-bb4c-a0ce7206fece">
+        <input type="text" name="name" placeholder="Your Name" class="request-input" required>
+        <input type="email" name="email" placeholder="Your Email" class="request-input" required>
+        <textarea name="message" placeholder="Your Message" class="request-input" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="request-right">
+        <img src="img/bgdismusicc.png" alt="DiscMusic">
+    </div>
+</div>
+ 
+<!--footer-->
+<section class="main-footer">
+    <div class="container-footer">
+        <div class="row-footer">
+            <div class="col-footer">
+                <h2>DiscMusic</h2>
+                <p>Terimakasih telah mengunjungi dan menelusuri DiscMusic. 
+                    <br>Nantikan lebih banyak trek musik dari artis-artis terkenal lainnya.</p>
+            </div>
+            <div class="col-footer-explore">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="http://localhost/web_statis/uts_home.html">Home</a></li>
+                    <li><a href="http://localhost/web_statis/uts_about.html">About Us</a></li>
+                    <li><a href="http://localhost/web_statis/uts_discoghraphy.html">Discoghraphy<a></li>
+                    <li><a href="http://localhost/web_statis/uts_request.html">Request<a></li>
+                    <li><a href="http://localhost/web_statis/uts_registration.html">Registration<a></li>
+                </ul>
+            </div>
+            <div class="col-footer-contact" id="Contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="http://localhost/web_statis/uts_home.html">
+                        <i class="fa-solid fa-location-dot"></i>Visit our website</a></li>
+                    <li><a href="mailto:aisahmahrani57@gmail.com">
+                        <i class="fa-regular fa-envelope"></i>aisahmahrani57@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <div class="main-footer">
+                <div class="one-footer">
+            <p>&copy; 2024 DiscMusic. All Rights Reserved | Made with &#128147 by <span class="designer>"><u>Aisah Mahrani Lubis (11220251000007) 5A</u></span></p>
+                </div>
+                <div class="one-footer">
+                    <ul>
+                    <li><a href="https://www.instagram.com/ashmhrn/profilecard/?igsh=MWFhNDVreTdobGYyYQ=="><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/625772184562"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://x.com/Ashmhrnnnn?t=0X8jwv0GdegDgCeVDz04GQ&s=09"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

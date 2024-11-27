@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Discography Music Archive</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='icon' type='image/x-icon' media='screen' href='img/discmusic.png'>
+    <link rel='stylesheet' type='text/css' media='screen' href='uts.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="head">
+        <h1>Find Your Favorite Music</h1>
+        <p>Uncover the Songs You'll Love</p>
+    </div>
+    <header>
+        <!--Navigasi-->
+        <a href="#" class="logo"><i class="fa-solid fa-headphones"></i> DiscMusic</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar" class="fas fa-bars"></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://localhost/web_statis/uts_home.html"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+                <li><a><i class="fa-solid fa-layer-group"></i> Galery<i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul>
+                    <li><a href="http://localhost/web_statis/uts_discoghraphy.html"><i class="fa-solid fa-compact-disc"></i> Discoghraphy</a></li>
+                    <li><a href="http://localhost/web_statis/uts_request.html"><i class="fa-solid fa-comment"></i> Request</a></li>
+                </ul>
+                </li>
+                <li><a href="http://localhost/web_statis/uts_registration.html"><i class="fa-regular fa-user"></i> Registration</a></li>
+                <li><a href="#Contact"><i class="fa-solid fa-phone"></i> Contact</a></li>
+            </ul>
+        </nav>
+            </header>
+    <!--isi content-->
+    <main>
+        <marquee><h2>Hai..! DiscLovers &#128075 &#128075 &#128525 &#127926</h2></marquee>
+        <!--Sidebar-->
+        <aside class="sidebar">
+            <div class="sidebar-jam">
+                <h1 id="greeting"></h1>
+                <h1 id="clock"></h1>
+            </div>
+            <div class="sidebar-content">
+            <div class="calender">
+                <p id="bulan"></p>
+                <p id="hari"></p>
+                <p id="tanggal"></p>
+                <p id="tahun"></p>
+            </div>
+            </div>
+        </aside>
+          <script>
+            const lang = navigator.language;
+            let date = new Date();
+
+            let tanggal = date.getDate();
+            let month = date.getMonth();
+            let hari = date.toLocaleString(lang,{weekday: "long"});
+            let bulan = date.toLocaleString(lang,{month: "long"});
+            let tahun = date.getFullYear()
+
+            document.getElementById("bulan").innerHTML = bulan;
+            document.getElementById("hari").innerHTML = hari;
+            document.getElementById("tanggal").innerHTML = tanggal;
+            document.getElementById("tahun").innerHTML = tahun;
+          </script>
+          <script>
+            function clock(){
+                var date = new Date();
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var seconds = date.getSeconds();
+                var midday;
+
+                hours = updateTime (hours);
+                minutes = updateTime (minutes);
+                seconds = updateTime (seconds);
+                var name = "DiscLovers"
+
+                midday = (hours >= 12 )? "PM" : "AM";
+
+                document.getElementById("clock").innerHTML = "<span>"+hours +"</span>" +":" + "<span>"+ minutes + "</span>" +":" + "<span>" +seconds +"</span>"+ "<span>"+midday+"</span>";
+                var time = setTimeout (function(){
+                    clock();
+                }, 1000);
+
+                if (hours < 12){
+                    var greeting = "Good Morning " + name + " Harry Up!";
+                }
+                if(hours >= 12 && hours <= 18){
+                    var greeting = "Good Afternoon " + name;
+                }
+                if(hours >= 18 && hours <= 24){
+                    var greeting = "Good Evening " + name;
+                }
+                document.getElementById("greeting").innerHTML = greeting;
+            }
+            function updateTime(k){
+                if (k < 10){
+                    return "0" + k
+                } else {
+                    return k;
+                }
+            }
+            clock()
+          </script>
+<hr class="hr-about">
+<!--isi konten about-->
+        <section class="contentabout container-about">
+           <p> <img src="./img/discmusic.png" alt="DiscMusic"> 
+    DiscMusic adalah platform digital yang dirancang khusus untuk pecinta musik, menyediakan koleksi discografi 
+    lengkap dari berbagai artis, mulai dari musisi ternama yang telah mendunia hingga talenta baru yang sedang naik daun. 
+    Kami memahami bahwa musik adalah lebih dari sekadar hiburan; itu adalah perjalanan penuh makna yang mencerminkan 
+    karya, dedikasi, dan cerita di balik setiap nada dan lirik.
+    <br><br>Dengan DiscographyMusic, Anda dapat dengan mudah menemukan dan menjelajahi album, single, EP, hingga 
+    kolaborasi lintas genre seperti pop, rock, R&B, hip-hop, hingga musik klasik. Kami memastikan setiap koleksi kami 
+    selalu diperbarui, sehingga Anda tidak akan ketinggalan informasi terbaru tentang rilisan atau proyek baru dari artis 
+    favorit Anda.
+    <br><br>Lebih dari sekadar menyediakan data, kami berkomitmen untuk menjadi jembatan antara musisi dan penggemar 
+    mereka, menghadirkan informasi yang lengkap, akurat, dan mudah diakses. Di sini, Anda dapat menelusuri perjalanan 
+    karier musisi dari awal hingga pencapaian puncak mereka, memahami cerita di balik setiap karya, dan menemukan 
+    inspirasi melalui perjalanan mereka.
+    <br><br>Kami percaya bahwa setiap lagu, album, atau single memiliki cerita yang layak untuk dihargai. 
+    DiscographyMusic hadir untuk memastikan setiap perjalanan musik memiliki tempatnya sendiri, memberikan pengalaman 
+    unik bagi pengguna, dan terus merayakan keindahan musik yang menyatukan kita semua. 
+    <br><br>Kami juga memberikan ruang bagi para pengguna untuk berpartisipasi dalam memperkaya koleksi kami. Jika ada 
+    artis favorit yang belum tersedia discografinya di DiscographyMusic, kalian bisa langsung mengirimkan permintaan! 
+    Tim kami akan dengan senang hati menambahkan koleksi discografi tersebut agar pengalaman eksplorasi musik kalian 
+    semakin lengkap dan memuaskan. </p>
+        </section>
+    </main>
+
+
+<!--footer-->
+<section class="main-footer">
+    <div class="container-footer">
+        <div class="row-footer">
+            <div class="col-footer">
+                <h2>DiscMusic</h2>
+                <p>Terimakasih telah mengunjungi dan menelusuri DiscMusic. 
+                    <br>Nantikan lebih banyak trek musik dari artis-artis terkenal lainnya.</p>
+            </div>
+            <div class="col-footer-explore">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="http://localhost/web_statis/uts_home.html">Home</a></li>
+                    <li><a href="http://localhost/web_statis/uts_about.html">About Us</a></li>
+                    <li><a href="http://localhost/web_statis/uts_discoghraphy.html">Discoghraphy<a></li>
+                    <li><a href="http://localhost/web_statis/uts_request.html">Request<a></li>
+                    <li><a href="http://localhost/web_statis/uts_registration.html">Registration<a></li>
+                </ul>
+            </div>
+            <div class="col-footer-contact" id="Contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="http://localhost/web_statis/uts_home.html">
+                        <i class="fa-solid fa-location-dot"></i>Visit our website</a></li>
+                    <li><a href="mailto:aisahmahrani57@gmail.com">
+                        <i class="fa-regular fa-envelope"></i>aisahmahrani57@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <div class="main-footer">
+                <div class="one-footer">
+            <p>&copy; 2024 DiscMusic. All Rights Reserved | Made with &#128147 by <span class="designer>"><u>Aisah Mahrani Lubis (11220251000007) 5A</u></span></p>
+                </div>
+                <div class="one-footer">
+                    <ul>
+                    <li><a href="https://www.instagram.com/ashmhrn/profilecard/?igsh=MWFhNDVreTdobGYyYQ=="><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/625772184562"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="https://x.com/Ashmhrnnnn?t=0X8jwv0GdegDgCeVDz04GQ&s=09"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
